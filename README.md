@@ -1,20 +1,19 @@
 # Kyrel
 Kyrel is a simple browser-based game for learning about control flow and loops in javascript. It is reminiscent of a turing machine that manipulates a strip of tape, transforming it from an initial state to a final state.
 
-A number of built-in methods are available for traversing/transforming the row:
+### Methods
+The following special methods are available for traversing/transforming the row:
+* `moveRight();`
+* `moveLeft();`
+* `useGreen();`
+* `useBlue();`
+* `draw();`
+* `erase();`
+* `onGreen();`
+* `onBlue();`
 
-``` javascript
-moveRight();
-moveLeft();
-useGreen();
-useBlue();
-draw();
-erase();
-onGreen();
-onBlue();
-```
-
-Example 1: Write a program which draws a green circle at the end of the row.
+### Example Problem
+Write a program which draws a green circle at the end of the row.
 
 ``` javascript
   function main() {
@@ -43,7 +42,7 @@ This would result in the following transformation:
 
 Clone this repo!
 
-There are three problem sets: [day 1](/challenges/day1.md), [day 2](/challenges/day2.md), [day 3](/challenges/day3.js).
+There are three problem sets, organized by difficulty: [day_1](/challenges/day1.md), [day_2](/challenges/day2.md), [day_3](/challenges/day3.js).
 
 Solutions may be found in the [/solutions](/challenges/solutions) folder. NO PEEKING! Try your darndest before you give up. The name of the solution file will match the title of the problem. For example, the solution to **turn_3rd_cell_blue** can be found at [challenges/solutions/turn_3rd_cell_blue.md](challenges/solutions/turn_3rd_cell_blue.md).
 
@@ -87,7 +86,7 @@ function main(n) {
 * When you've completed a problem, save your work! Copy-paste your entire `main` function, as well as any variables you've declared above it, into a separate file called `solutions.txt`. Please record all solutions in a single document. It should look like [sample_solutions.txt](./sample_solutions.txt) (but with more solutions, of course).
 
 #### Inspiration
-Adapted from [Kyrel](https://github.com/kyletns/kyrel). Inspired by the Turing Machine.
+Adapted from [Kyrel](https://github.com/kyletns/kyrel).
 
 More information about turing machines:
 * [Play the Turing Machine Google Doodle](https://encrypted.google.com/doodles/alan-turings-100th-birthday)
