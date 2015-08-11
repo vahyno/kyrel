@@ -43,7 +43,7 @@ This would result in the following transformation:
 
 Clone this repo!
 
-There are three problem sets: [day 1](/challenges/day1.md), [day 2](/challenges/day2.md), [day 3](/challenges/day3.md).
+There are three problem sets: [day 1](/challenges/day1.md), [day 2](/challenges/day2.md), [day 3](/challenges/day3.js).
 
 Solutions may be found in the [/solutions](/challenges/solutions) folder. NO PEEKING! Try your darndest before you give up. The name of the solution file will match the title of the problem. For example, the solution to **turn_3rd_cell_blue** can be found at [challenges/solutions/turn_3rd_cell_blue.md](challenges/solutions/turn_3rd_cell_blue.md).
 
