@@ -48,7 +48,7 @@ There are three problem sets: [day 1](/challenges/day1.md), [day 2](/challenges/
 Solutions may be found in the [/solutions](/challenges/solutions) folder. NO PEEKING! Try your darndest before you give up. The name of the solution file will match the title of the problem. For example, the solution to **turn_3rd_cell_blue** can be found at [challenges/solutions/turn_3rd_cell_blue.md](challenges/solutions/turn_3rd_cell_blue.md).
 
 ### Using kyrel.js
-![](/main-js.png)
+![](/screenshots/main-js.png)
 
 * First, you need to manually configure your "starting row" (see kyrel.js#L22) to match the initial state of the problem you're solving.
     - `var initial_state = ['.', 'b', '.', 'g', '.'] // kyrel.js#L22`
