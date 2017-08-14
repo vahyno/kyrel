@@ -32,10 +32,10 @@ This would result in the following transformation:
  ['.', '.', '.', '.', 'g'] // end row (end state)
 ```
 
-####Start:
+#### Start:
 ![](/screenshots/initial_state.png)
 
-####End:
+#### End:
 ![](/screenshots/end_state.png)
 
 ## Instructions
