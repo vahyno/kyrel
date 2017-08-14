@@ -139,7 +139,6 @@ $(document).ready(function() {
   });
 
   $(".reset").click(function(){
-    codeArea.save();
     window.location.reload();
   })
 
