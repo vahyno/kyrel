@@ -105,43 +105,6 @@ function onBlue() {
 function onGreen() {
   return currentSquare().find(".dot.dot-green").length > 0;
 }
-
-function CodeArea($el, store) {
-  this.$el = $el;
-
-  var self = this;
-  this.$el.on("focus", function(){
-    self.removeError();
-  });
-
-  this.rawCode = function(){
-    return store.getItem("rawCode") || "// code in here!";
-  }
-  this.save = function(){
-    var rawCode = this.$el[0].innerText; // innerText because we want line breaks
-    store.setItem("rawCode", rawCode);
-  }
-  this.render = function(){
-    this.$el.text(this.rawCode());
-  }
-  this.eval = function(cb){
-    this.removeError();
-    this.save();
-    try {
-      cb( this.rawCode() );
-    } catch (err) {
-      this.displayError();
-    }
-  }
-  this.displayError = function(){
-    this.$el.addClass("has-error");
-  }
-  this.removeError = function(){
-    this.$el.removeClass("has-error");
-  }
-
-}
-
 // optional OO interface;
 var k = o = {
   moveRight,
@@ -171,14 +134,8 @@ $(document).ready(function() {
   initializeRow();
   updateRow();
 
-  var codeArea = new CodeArea($("#coding-area"), window.localStorage);
-  codeArea.render();
-
   $(".play").click(function tryPlay() {
-    codeArea.eval(function(rawCode){
-      var newMain = new Function( rawCode );
-      play(newMain);
-    });
+    main();
   });
 
   $(".reset").click(function(){
@@ -199,4 +156,3 @@ $(document).ready(function() {
   })
 
 });
-
