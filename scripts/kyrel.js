@@ -121,16 +121,8 @@ $(document).ready(function() {
   var rando = parseInt(Math.random()*10);
   console.log("Our random number for this run is "+rando);
 
-  window.onhashchange = updateInitialState;
-  function updateInitialState(){
-    window.initial_state = window.location.hash.slice(1).split("");
-    initializeRow();
-  }
-  if (!window.location.hash) {
-    window.history.replaceState(null, null, "#.....")
-  }
+  window.initial_state = initial_state;
 
-  updateInitialState();
   initializeRow();
   updateRow();
 
@@ -147,11 +139,5 @@ $(document).ready(function() {
     "b":"g",
     "g":".",
   };
-  $("td").click(function(event){
-    var index = event.currentTarget.cellIndex;
-    initial_state[index] = rotation[ initial_state[index] ];
-    window.history.replaceState(null, null, "#"+initial_state.join(""))
-    updateInitialState();
-  })
 
 });
