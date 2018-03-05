@@ -91,7 +91,7 @@ Adapted from [Kyrel](https://github.com/kyletns/kyrel).
 More information about turing machines:
 * [Play the Turing Machine Google Doodle](https://encrypted.google.com/doodles/alan-turings-100th-birthday)
 * [Turing Machine Simulator](http://turing-machine.com/)
-* [A Tweetable Turing Machine](https://gist.github.com/mrrrgn/3200044be3fd31f4c3b5)
+* [A Tweetable Turing Machine](https://gist.github.com/TheZ3ro/0daff5c2aa317ec6d51f)
 
 Possible slides:
 [Kyrel.pdf](Kyrel.pdf)
