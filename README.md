@@ -2,7 +2,23 @@
 Kyrel is a simple browser-based game for learning about control flow and loops in javascript.
 
 ### Example Problem
+This codebase contains the following methods for traversing / transforming the row:
+* `moveRight();`
+* `moveLeft();`
+* `useGreen();`
+* `useBlue();`
+* `draw();`
+* `erase();`
+* `onGreen();`
+* `onBlue();`
+
+#### Start:
+![](/images/initial_state.png)
+
 Write a program which draws a green circle at the end of the row.
+
+#### End:
+![](/images/end_state.png)
 
 ``` javascript
   function main() {
@@ -15,29 +31,6 @@ Write a program which draws a green circle at the end of the row.
   }
 ```
 
-This would result in the following transformation:
-```
- ['.', '.', '.', '.', '.'] // start row (initial state)
- ['.', '.', '.', '.', 'g'] // end row (end state)
-```
-
-#### Start:
-![](/images/initial_state.png)
-
-#### End:
-![](/images/end_state.png)
-
-### Methods
-This codebase contains the following methods for traversing / transforming the row:
-* `moveRight();`
-* `moveLeft();`
-* `useGreen();`
-* `useBlue();`
-* `draw();`
-* `erase();`
-* `onGreen();`
-* `onBlue();`
-
 ## Instructions
 
 `git clone` this repo (you now know how to do this!).
@@ -45,11 +38,11 @@ This codebase contains the following methods for traversing / transforming the r
 There are 3 problem sets: 
 * [Part I](/instructions/part1.md)
 * [Part II](/instructions/part2.md)
-* [PART III](/instructions/part3.js).
+* [PART III](/instructions/part3.js)
 
 ### Using kyrel.js
 
-If you look in `play.js` you'll see this:
+First, take a look in `play.js` – this is where you will write your code:
 
 ``` js
 var initial_state = [ '.', '.', '.', '.', '.' ];
@@ -73,15 +66,16 @@ function main(n) {
 }
 ```
 
-* First, manually configure your "starting row" to match the initial state of the problem you're solving.
+* First, manually configure your `initial_state` to match the start state of the problem you're solving
     - `var initial_state = ['.', 'b', '.', 'g', '.']`
         + 'b' means blue
         + 'g' mean green
         + '.' (dot) means empty
-* Next, write your instructions inside the `main` function in [play.js].
-* To run the program, open `index.html` in your browser and press "Play". This will execute the code you put in your `main` function.
-    * TIP: Refresh the page whenever you make changes to your JavaScript!
-    * PRO-TIP: Always have your Chrome Developer Console open (`Cmd` + `Opt` + `i`), and check for error messages!
+* Next, use the methods available to you (e.g. `moveRight()`, `moveLeft()`, etc.) inside the `main` function to get the problem's finish state
+* To run the program, open `index.html` in your browser and press "Play"
+    * This will execute the code in your `main` function
+    * Refresh the page whenever you make changes to your JavaScript!
+    * Always have your Chrome Developer Console open (`Cmd` + `Opt` + `i`) to check for error messages
 
 * When you've completed a problem, save your work! Create a file that matches your problem name, e.g. `all-blue.js`, and copy-paste your `play.js` into that new file. Then, go back to `play.js` and clear out your `main` function, so you can start fresh again.
 
