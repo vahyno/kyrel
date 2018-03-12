@@ -42,9 +42,10 @@ This codebase contains the following methods for traversing / transforming the r
 
 `git clone` this repo (you now know how to do this!).
 
-There are 3 problem sets: [Part I](/part1.md), [Part II](/part2.md), [PART III](/part3.js).
-
-Try your best before looking at the [/solutions](/solutions). The name of the solution file will match the title of the problem. For example, the solution to **turn_3rd_cell_blue** is at [solutions/turn_3rd_cell_blue.js](solutions/turn_3rd_cell_blue.js).
+There are 3 problem sets: 
+* [Part I](/instructions/part1.md)
+* [Part II](/instructions/part2.md)
+* [PART III](/instructions/part3.js).
 
 ### Using kyrel.js
 
@@ -87,5 +88,4 @@ function main(n) {
 #### Inspiration
 Adapted from [Kyrel](https://github.com/kyletns/kyrel).
 
-Slides:
-[PDF](Kyrel.pdf) or [Google Slides](https://docs.google.com/presentation/d/1j47BMDfows4O5rw4UYaYabHhosmZHQ8iKs8A5b-T3Pw/edit?usp=sharing)
+[Slides](https://docs.google.com/presentation/d/1j47BMDfows4O5rw4UYaYabHhosmZHQ8iKs8A5b-T3Pw/edit?usp=sharing)
