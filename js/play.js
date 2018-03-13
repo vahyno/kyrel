@@ -1,9 +1,9 @@
 /*
   INSTRUCTIONS
-    - Write all of your code inside the "main" function below.
+    - Write all of your code inside the `main` function below.
     - Use this file to build/test your programs.
     - To save your work, when you finish a challenge:
-        - make a copy of this file and name it e.g. 'solution-all-blue.js'
+        - make a copy of this file in this `js/` directory and name it e.g. `all-blue.js`
         - then clean out play.js so you can start fresh on a new challenge.
 
   RESERVED WORDS (do not use as variable names)
