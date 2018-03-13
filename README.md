@@ -33,7 +33,7 @@ Write a program which draws a green circle at the end of the row.
 
 ## Instructions
 
-`git clone` this repo (you now know how to do this!).
+Fork and `git clone` this repo (you now know how to do this!).
 
 There are 3 problem sets: 
 * [Part I](/instructions/part1.md)
