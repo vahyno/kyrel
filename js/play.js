@@ -3,8 +3,8 @@
     - Write all of your code inside the `main` function below.
     - Use this file to build/test your programs.
     - To save your work, when you finish a challenge:
-        - make a copy of this file in this `js/` directory and name it e.g. `all-blue.js`
-        - then clean out play.js so you can start fresh on a new challenge.
+        - Make a copy of this file in this `js/` directory and name it e.g. `all-blue.js`
+        - Clean out this `play.js` file so you can start fresh on a new challenge
 
   RESERVED WORDS (do not use as variable names)
       row, colors, kyrel, initial_state
