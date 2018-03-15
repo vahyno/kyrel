@@ -20,24 +20,21 @@
     'g' => green
 */
 
-var initial_state = [ 'g', 'b', 'b', '.', '.' ];
+var initial_state = ['b', 'b', 'b', 'b', 'b'];
 
-/*delete_before - solution
-start: [ 'g', 'b', '.', '.', '.' ]
-
-finish: [ '.', 'b', '.', '.', '.' ]
-
-start: [ 'g', 'b', 'b', '.', '.' ]
-
-finish: [ '.', '.', 'b', '.', '.' ]*/
+/*every_n_erase - solution
+start: ['b', 'b', 'b', 'b', 'b']
+finish: ['.', '.', '.', '.', '.'] // (given n is 1)
+finish: ['b', '.', 'b', '.', 'b'] // (given n is 2)
+finish: ['b', 'b', 'b', 'b', '.'] // (given n is 5)*/
 
 function main(){
 
+  var n = 2
+
   for (let i = 0; i < initial_state.length; i++) {
-    if (onBlue() || onGreen()) {
-      moveLeft()
+    if ((i + 1) % n == 0) {
       erase();
-      moveRight()
     }
     moveRight();
 

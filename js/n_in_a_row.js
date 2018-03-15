@@ -20,33 +20,21 @@
     'g' => green
 */
 
-var initial_state = [ 'g', 'b', 'b', '.', '.' ];
+var initial_state = ['.', '.', '.', '.', '.'];
 
-/*delete_before - solution
-start: [ 'g', 'b', '.', '.', '.' ]
-
-finish: [ '.', 'b', '.', '.', '.' ]
-
-start: [ 'g', 'b', 'b', '.', '.' ]
-
-finish: [ '.', '.', 'b', '.', '.' ]*/
+/*start: ['.', '.', '.', '.', '.']
+finish: ['b', 'b', '.', '.', '.'] (given n is 2)
+finish: ['b', 'b', 'b', '.', '.'] (given n is 3) */
 
 function main(){
+  let n=3
+  useBlue();
+  draw();
 
-  for (let i = 0; i < initial_state.length; i++) {
-    if (onBlue() || onGreen()) {
-      moveLeft()
-      erase();
-      moveRight()
-    }
+  for (let i = 1; i<n;i++ ){
     moveRight();
-
+    draw();
   }
-
-
-
-
-
 
 
   //////////////////////////////////

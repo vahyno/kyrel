@@ -20,24 +20,25 @@
     'g' => green
 */
 
-var initial_state = [ 'g', 'b', 'b', '.', '.' ];
+var initial_state = ['g', 'b', '.', '.', 'g'];
 
-/*delete_before - solution
-start: [ 'g', 'b', '.', '.', '.' ]
+/*move_the_blue_dot_one_to_the_right - solution
+start: ['.', '.', 'b', '.', '.']
 
-finish: [ '.', 'b', '.', '.', '.' ]
+finish: ['.', '.', '.', 'b', '.']
 
-start: [ 'g', 'b', 'b', '.', '.' ]
+start: ['g', 'b', '.', '.', 'g']
 
-finish: [ '.', '.', 'b', '.', '.' ]*/
+finish: ['g', '.', 'b', '.', 'g']*/
 
 function main(){
 
   for (let i = 0; i < initial_state.length; i++) {
-    if (onBlue() || onGreen()) {
-      moveLeft()
+    if (onBlue()) {
       erase();
+      useBlue();
       moveRight()
+      draw();
     }
     moveRight();
 

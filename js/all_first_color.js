@@ -20,33 +20,35 @@
     'g' => green
 */
 
-var initial_state = [ 'g', 'b', 'b', '.', '.' ];
+var initial_state = ['b', '.', '.', '.', '.'];
 
-/*delete_before - solution
-start: [ 'g', 'b', '.', '.', '.' ]
+/*start: ['b', '.', '.', '.', '.']
 
-finish: [ '.', 'b', '.', '.', '.' ]
+finish: ['.', '.', '.', '.', 'b']
 
-start: [ 'g', 'b', 'b', '.', '.' ]
+start: ['g', '.', '.', '.', '.']
 
-finish: [ '.', '.', 'b', '.', '.' ]*/
+finish: ['.', '.', '.', '.', 'g']
+
+start: ['.', '.', '.', '.', '.']
+
+finish: ['.', '.', '.', '.', '.']  */
 
 function main(){
 
-  for (let i = 0; i < initial_state.length; i++) {
-    if (onBlue() || onGreen()) {
-      moveLeft()
-      erase();
-      moveRight()
+  for (let i = 0; i<4;i++ ){
+
+    if (i === 0 && onBlue()){
+      useBlue();
+      draw();
+    } else if(i === 0 && onGreen()){
+      useGreen();
+      draw();
     }
+
     moveRight();
-
+    draw();
   }
-
-
-
-
-
 
 
   //////////////////////////////////
