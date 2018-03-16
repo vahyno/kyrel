@@ -20,7 +20,7 @@
     'g' => green
 */
 
-var initial_state = ['b', 'g', 'g', '.', 'g'];
+var initial_state = ['b', '.', 'b', '.', '.'];
 
 /*bleed_right - solution and advanced solution
 start: ['.', '.', 'b', '.', '.']
@@ -49,25 +49,24 @@ finish: ['g', '.', 'g', 'g', 'b']*/
 
 function main(){
 
-  let workArray = [];
-
-  for (let i = initial_state.length-1;i>=0; i--) {
-    workArray.push(initial_state[i]);
+  let colorCounter = 0;
+  for (var i = 0; i < 4; i++) {
+    if (onBlue()) {
+      colorCounter++
     }
-
-  workArray.forEach(function(color) {
-    if (color === 'b') {
-      useBlue();
-      draw();
-    } else if (color === 'g') {
-      useGreen();
-      draw();
-    } else {
-      erase();
-    }
+    erase();
     moveRight();
-  })
-
+  }
+  useBlue();
+  for (var i = 1; i <= colorCounter; i++) {
+    draw();
+    moveLeft();
+  }
+  // while(colorCounter > 0){
+  //   draw();
+  //   moveLeft();
+  //   colorCounter--;
+  // }
 
 
 
